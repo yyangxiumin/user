@@ -1,9 +1,9 @@
 
 /* Import fonts */
-@import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
+/* @import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900); */
 
 /* BASIC THEME CONFIGURATION */
-body {
+/* body {
     color: #797979;
     background: #eaeaea;
     font-family: 'Ruda', sans-serif;
@@ -28,7 +28,7 @@ a, a:hover, a:focus {
 ::-moz-selection {
     background: #4ECDC4;
     color: #fff;
-}
+} */
 
 #container {
     width: 100%;
@@ -414,6 +414,12 @@ ul.sidebar-menu li a.active i {
     padding-right: 15px;
     padding-bottom: 15px;
     padding-top: 0px;
+    width: 100%;
+}
+
+.fh-wrapper {
+    display: inline-block;
+    margin-top: 60px;
     width: 100%;
 }
 
@@ -1729,11 +1735,32 @@ PANELS CONFIGURATIONS
 
 /* FORMS CONFIGURATION */
 .form-panel {
+    padding-top: 15px;
+    padding-left: 50px;
     background: #ffffff;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0px 3px 2px #aab2bd;
     text-align: left;
+    border-radius: 3px;
+}
+
+.form-panel-ftr {
+    padding: 50px 200px;
+    background: #f6f6f8;
+}
+.form-panel-ftr .position-span1-1 {
+    font-size: 20px;
+    color: #414a60;
+}
+
+.smSt-1 {
+    padding-bottom: 20px;
+}
+
+.text-color1-1 {
+    margin-bottom: 30px;
+    padding-left: 5px;
+    color: #414a60;
+    font-size: 16px;
+    border-left: 3px solid #48bcb4;
 }
 
 label {
@@ -1741,9 +1768,98 @@ label {
 }
 
 .form-horizontal.style-form .form-group {
-    border-bottom: 1px solid #eff2f7;
     padding-bottom: 15px;
     margin-bottom: 15px;
+}
+
+.form-horizontal.style-form .form-group-mt {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.form-group-information {
+    padding-left: 50px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.Personal-editing {
+    margin-left: 17%;
+}
+
+.Personal-editing > a {
+    
+    color: #48bcb4;
+}
+
+.op {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.form-group-information:hover .op{
+    display: block;
+}
+
+.op > a {
+    color: #48bcb4;
+}
+
+.Small-section {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 100px;
+    border-bottom: 1px solid #f6f6f8;
+}
+
+.smSt-1 .form-panel-profile-pic i {
+    font-size: 10px;
+    color: #aaaaaa;
+}
+
+.p-small {
+    margin-top: 25px;
+}
+
+.smSt-1 .prev-line {
+    padding: 0 30px;
+    font-size: 14px;
+    color: #414a60;
+    border-right: 1px solid #aaa;
+}
+
+.smSt-1 .prev-line-2 {
+    padding: 0 40px;
+    color: #414a60;
+    border-right: 1px solid #aaa;
+}
+.smSt-1 .prev-line-3 {
+    padding: 0 30px;
+    font-size: 14px;
+    color: #414a60;
+}
+
+.form-group-information .prev-line {
+    color: #999;
+}
+
+.Add-resume {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    line-height: 30px;
+    color: #48bcb4;
+}
+
+.Add-resume .Add {
+    font-size: 12px;
+    color: #48bcb4;
+}
+
+.small-btn {
+    position: absolute;
+    right: -20px;
 }
 
 .round-form {
@@ -2023,13 +2139,19 @@ ul li {
 /* PROFILE PAGE CONF */
 .profile-pic img {
     width: 120px;
-    /*  height: 120px;*/
-    max-width:100%;
-    max-height: auto;
+    max-width: 100%;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     border: 10px solid #f1f2f7;
-    margin-top: 20px;
+}
+
+.form-panel-profile-pic img {
+    margin-top: 50px;
+    margin-left: 40%;
+    width: 120px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 10px solid #f1f2f7;
 }
 
 .profile-text h6 {
@@ -3490,6 +3612,10 @@ ul.chat-available-user li a:hover {
 
 /* 自定义样式 */
 
+.modal {
+    margin-top: 100px;
+}
+
 .position-span1{ padding-left:15px;}
 .profile-text h6.mt-5{ margin-top:5px;}
 span.line-pd{ padding:0 8px;}
@@ -3505,7 +3631,13 @@ a.icon-width{ display:inline-block; margin-right:5px; margin-bottom:5px;}
 .m-top .btn.btn1{ margin-right:10px;}
 .btn-search1{ padding:5px 12px;}
 .closed{ display: none; background-color:#ccc; color:#666; font-size:12px; border-radius:5px; padding:5px; font-weight:lighter; margin-left:10px; border:1px solid #666; float:left;}
-.text-color1{ color:#48cfad;}
+.text-color1 {
+    margin-bottom: 30px;
+    padding-left: 5px;
+    color: #000;
+    font-size: 20px;
+    border-left: 3px solid #48bcb4;
+}
 .small-text{ font-size:12px; padding-left:26px;}
 .form-btn{ text-align:center; height:auto; overflow:hidden; padding:30px 0;}
 .form-btn button{ width:100px; margin-right:15px;}
@@ -3521,7 +3653,11 @@ button.tab-on,button.tab-on:focus{ background-color: transparent; border:0; colo
 .text-height{ height:100px; overflow-y:auto}
 .ml-0{ margin-left:0;}
 .pic-width{ display: inline-block; width:30%; max-width:100px; max-height:100px;}
-.form-horizontal .m-label{ text-align:right; font-weight:bold;}
+.form-horizontal .m-label{ text-align:right;font-weight: bold;}
+.f-label {
+    font-weight: bold;
+}
+
 
 .pre-talent,.pre-job{ display:none;}
 .m-pw{ margin-left:20px;}
@@ -3531,6 +3667,10 @@ a.m-a1:link {color:#fff;} /* 未访问的链接 */
 a.m-a1:hover{color:#337ab7;} /* 鼠标在链接上 */
 a.m-a1:active {color:#337ab7;} /* 点击激活链接——在你点击该链接之后，页面正在转向新地址的时候，链接显示此颜色；当你已经到了要链接的页面，然后再返回，原页面上的此链接仍是此颜色 */ 
 
+/* .Personal-paragraph {
+    margin-top: 80px
+} */
+
 .form-login h2.form-login-heading{ position:relative;}
 .form-login h2.form-login-heading a{ position:absolute; right:6px;top:5px; color:#fff;}
 .grey-bg{ background:#ddd;}
@@ -3538,7 +3678,7 @@ a.m-a1:active {color:#337ab7;} /* 点击激活链接——在你点击该链接�
 .profile-text h3 span.span1{ float:left;}
 
 .m-top-bg{ background:#22242a; margin:0; border-bottom:none;}
-.m-wrapper{margin-top:0; padding:0}
+.m-wrapper{margin-top:0; padding:0 }
 ul.resp-tabs-list {
     margin: 0px;
     padding: 0px;
